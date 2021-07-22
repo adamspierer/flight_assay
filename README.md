@@ -1,6 +1,6 @@
 # README - Flight Assay
 
-This repository provides documentation, scripts, and example images for running the flight performance assay. The assay was adapted from the publication [An Improved Method for Accurate and Rapid Measurement of Flight Performance in Drosophila](https://www.jove.com/t/51223/an-improved-method-for-accurate-rapid-measurement-flight-performance), and differs in the image capture and data processing.
+This repository provides documentation, scripts, and example images for running the flight performance assay. The assay was adapted from the publication: [An Improved Method for Accurate and Rapid Measurement of Flight Performance in Drosophila](https://www.jove.com/t/51223/an-improved-method-for-accurate-rapid-measurement-flight-performance), and differs in the image capture set up and data processing.
 
 This repository contains three sections:
 
