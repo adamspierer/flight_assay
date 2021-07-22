@@ -32,6 +32,4 @@ Output data is processed by stripping the experimental metadata from the file na
 
 
 ## Citation
-These scripts were originally designed to make this assay more high throughput and were used in other work.
-
-To cite this repository, cite the [PLOS Genetics paper](https://doi.org/10.1371/journal.pgen.1008887)
+These scripts were originally designed to improve on the throughput of the published protocol. It is used in the [PLOS Genetics paper](https://doi.org/10.1371/journal.pgen.1008887). Please cite accordingly.
