@@ -21,19 +21,18 @@ Once the adhesive is applied, roll the plastic sheet length-wise and feed it int
 
 Turn on the Raspberry Pi by plugging the labeled cords: power, HDMI, USB - keyboard, and USB - mouse, into the appropriate ports. This will take a minute to boot, but will result in a desktop that can be clicked around.
 
-[image?]
+<img src="https://github.com/adamspierer/flight_assay/blob/main/images/begin_flightAssay.png" width="600" height="400" align="center">
 
-Right click the `flightAssay.py` script and open with a Text Editor. This file contains the script for running the flight assay program. *The user should adjust the first few lines so the program outputs the images in the appropriate directory (creating a new directory if the desired one doesn't exist), as well as the experimental condition categories.* The default is three fields (mtDNA, nDNA, sex), though these names/labels can be changed in the first few lines of the code. They ultimately don't matter and serve as  a guide for the user to differentiate field names. More fields can be added, but this requires modification of the GUI window parameters, and how many fields & boxes are specified. The simplest solution to including more than three experimental conditions is to double up on conditions in a single field and separate with an underscore (`_`). Downstream programs look for that delimiter to parse the file name.
+Right click the `flightAssay.py` icon on the Desktop and open with `Text Editor`. This file contains the script for running the flight assay program. *The user should adjust the first few lines so the program outputs the images in the appropriate directory (creating a new directory if the desired one doesn't exist), as well as the experimental condition categories.* The default is three `field_label`s (mtDNA, nDNA, sex), though these names/labels can be changed in the first few lines of the code. They ultimately don't matter and serve as  a guide for the user to differentiate field names. More fields can be added, but this requires modification of the GUI window parameters, and how many fields & boxes are specified. The simplest solution to including more than three experimental conditions is to double up on conditions in a single field and separate with an underscore (`_`). Downstream programs look for that delimiter to parse the file name.
 
 [image?]
 
 Next, click the Terminal icon on the top menu (black square with white `>_` inside) and type:
-`cd ~/Desktop/
-python flightAssay.py`
+`python ~/Desktop/flightAssay.py`
 
 *NOTE*: Users should move the `1_captureImages.py` script from this repo's scripts folder to the Desktop of the Pi and rename it `flightAssay.py`. The script provided is meant to be a template, not a final solution.
 
-[image of GUI?]
+<img src="https://github.com/adamspierer/flight_assay/blob/main/images/running_flightAssay.png" width="600" height="400" align="center">
 
 At this point, the program is running and can be quit by pressing the `Quit` button or by closing the GUI. Performing a `KeyboardInterrupt` (ctrl + c) in the Terminal will freeze the program and require closing that instance of the Terminal to end it completely.
 
@@ -72,4 +71,4 @@ The adhesive does not need to be scraped between runs. This would constitute a l
 
 Use the plastic scraper to remove the adhesive from the plastic sheet. The adhesive will come off in globs, so use a paper towel to remove it from the scraper. The sheet and surrounding surfaces can be cleaned using the orange-scented cleaner. It is not essential to the next round of assays to remove all the adhesive, but it makes for a clear work environment.
 
-The computer can be turned of by entering `shutdown` into the Terminal, or by pressing the Raspberry logo on the left side of the top menu and selecting the shutdown option.
+The computer can be turned of by pressing the Raspberry logo on the left side of the top menu and selecting the shutdown option, and then the shutdown option again.
