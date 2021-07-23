@@ -25,8 +25,6 @@ Turn on the Raspberry Pi by plugging the labeled cords: power, HDMI, USB - keybo
 
 Right click the `flightAssay.py` icon on the Desktop and open with `Text Editor`. This file contains the script for running the flight assay program. *The user should adjust the first few lines so the program outputs the images in the appropriate directory (creating a new directory if the desired one doesn't exist), as well as the experimental condition categories.* The default is three `field_label`s (mtDNA, nDNA, sex), though these names/labels can be changed in the first few lines of the code. They ultimately don't matter and serve as  a guide for the user to differentiate field names. More fields can be added, but this requires modification of the GUI window parameters, and how many fields & boxes are specified. The simplest solution to including more than three experimental conditions is to double up on conditions in a single field and separate with an underscore (`_`). Downstream programs look for that delimiter to parse the file name.
 
-[image?]
-
 Next, click the Terminal icon on the top menu (black square with white `>_` inside) and type:
 `python ~/Desktop/flightAssay.py`
 
