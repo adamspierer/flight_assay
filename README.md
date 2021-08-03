@@ -14,6 +14,8 @@ Scripts, `README`, and example files for each section are contained in the respe
 
 ### 1. Capturing Images
 
+<img src="https://github.com/adamspierer/flight_assay/blob/main/images/flight_assay_camera.jpg" width="600" height="400" align="center">
+
 In the original protocol, image capture was originally done by laying the plastic sheet on a table and capture a picture with a handheld camera. The present protocol builds on this by placing the plastic sheet on a white poster board, propping it against a wall, and using a Raspberry Pi and PiCamera V2 (mounted to a fixed position with a MakerBeam kit) to record and name images.
 
 The Python2 script provided will run a graphical user interface (GUI) on the Raspberry Pi and allow the user to enter experimental conditions that are pertinent to downstream analysis (ex. genotype, sex, condition).
@@ -21,7 +23,7 @@ The Python2 script provided will run a graphical user interface (GUI) on the Ras
 
 ### 2. Processing Images
 
-Images are processed using [FIJI/ImageJ](https://imagej.net/software/fiji/downloads) and a custom macro (provided) that loops through all files in a specified folder with a specified suffix (ex. png, tif, jpg). The macro will crop the image to a user-specified region of interest and perform the 'Find Maxima...' function located under the 'Process' menu. This function will generate a list of x,y coordinates for each spot which should be spot checked by the user to ensure the 'Prominence' or detection threshold is appropriately set.
+Images are processed using [FIJI/ImageJ](https://imagej.net/software/fiji/downloads) and a custom macro (provided) that loops through all files in a specified folder with a specified suffix (ex. png, tif, jpg). The macro will crop the image to a user-specified region of interest and perform the `Find Maxima...` function located under the `Process` menu. This function will generate a list of x,y coordinates for each spot which should be spot checked by the user to ensure the 'Prominence' or detection threshold is appropriately set.
 
 An additional step should be taken during set up to calculate the number of pixels per meter so final y-outputs can be converted from pixels to the metric system.
 
