@@ -12,9 +12,9 @@ This repository contains three sections:
 
 Scripts, `README`, and example files for each section are contained in the respective folder. This repository is not meant to be run as is, but instead pulled from an adapted to each computer that needs to use the scripts.
 
-### 1. Capturing Images
-
 <img src="https://github.com/adamspierer/flight_assay/blob/main/images/flight_assay_camera.jpg" width="600" height="400" align="center">
+
+### 1. Capturing Images
 
 In the original protocol, image capture was originally done by laying the plastic sheet on a table and capture a picture with a handheld camera. The present protocol builds on this by placing the plastic sheet on a white poster board, propping it against a wall, and using a Raspberry Pi and PiCamera V2 (mounted to a fixed position with a MakerBeam kit) to record and name images.
 
