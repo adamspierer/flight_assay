@@ -19,6 +19,7 @@ experiment_details=['condition','genotype','sex','replicate']
 import pandas as pd
 import os
 from numpy import repeat
+from sys import argv
 
 ## Function to strip suffix and split 
 def scrape_details(filename):
@@ -42,6 +43,15 @@ def create_df(csvDirectory, File):
   _d['Y'] = 1 - _d.Y
   return(_d)
 
+## Check directory is valid
+try:
+  if os.path.isdir(argv[1]):
+    csvDirectory = argv[1]
+    print('Reading files from directory:',csvDirectory)
+except:
+  print('No command line arguments entered.\nReading files from hard coded directory:',csvDirectory)
+
+
 ## Concatenate DataFrames
 d = pd.concat([create_df(csvDirectory,item) for item in os.listdir(csvDirectory) if item.endswith('csv')])
 
@@ -61,5 +71,5 @@ h = pd.merge(e,f)
 h = pd.merge(h,g).drop(['index'],axis=1)
 
 ## Save results
-g.to_csv(saveDirectory + "results.csv")
+h.to_csv(saveDirectory + "results.csv")
 print('END')
